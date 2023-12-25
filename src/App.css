@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(45, 25, 59);
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url('https://img.freepik.com/premium-vector/car-repair-mechanical-services-layout-site-header-banner-with-cartoon-people-flat-vector-illustration-car-maintenance-tire-service-banner-template-auto-workshop_125133-606.jpg?size=626&ext=jpg&ga=GA1.2.1856933802.1668081542');
+  background-repeat: no-repeat;
+  background-size:cover; */
+}
+
+.Auth-form {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: rgb(242, 241, 241, 0.1);
+}
+
+.Auth-form-content {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: white;
+  font-weight: 800;
+  transition: ease-in-out 1.5s;
+}
+.Auth-form-title:hover {
+  margin-right: 70%;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.Auth-form-title-2 {
+  text-align: center;
+  margin-bottom: 1em;
+  margin-right: 3em;
+  font-size: 2em;
+  color: white;
+  font-weight: 800;
+  font-family: cursive;
+}
+.homepage {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 480px) {
+  .homepage {
+    flex-direction: column;
+  }
+
+  .Auth-form-title-2 {
+    margin-right: 2em;
+    font-size: 24px;
+  }
+  .Auth-form-container {
+    background-size: cover;
+    width: auto;
+  }
+}
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 30px;
+  height: 24px;
+  left: 30px;
+  top: 24px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 50px;
+  width: 50px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #1eb1fb;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+
+  background-color:rgb(16,16,16);
+  padding: 1.2em 1.4em 0;
+  font-size: 15px;
+}
+
+
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 2px solid rgb(239, 234, 234);
+  border-radius: 4px;
+  width: 80%;
+  
+}
+.form:hover{
+  /* border:none; */
+  box-shadow: 5px 5px 3px #efecec;;
+}
+
+.form2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.btn-form {
+  background-color: rgb(241, 234, 234);
+  border: none;
+  width: 80%;
+  margin-top:1rem;
+}
+.btn-form:hover{
+  background-color: rgb(241, 234, 234);
+}
+
+/* Morph shape necessary with bubble or elastic */
+/* .bm-morph-shape {
+  
+
+} */
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+
+}
+
+/* Individual item */
+.bm-item {
+  display: block;
+
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background-color: rgb(244, 238, 238);
+}
+
+/* Individual item */
+.bm-item {
+  display: flex;
+  font-family: 'Exo 2';
+  /* color: #13d65e; */
+  color:#1eb1fb;
+  margin-bottom: 10px;
+ 
+  /* text-align: left; */
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.icons2 {
+ text-decoration: none;
+  opacity: 0.9;
+  margin-right: 10rem;
+  color: grey;
+  font-size: 3rem;
+  transition: ease-in-out 0.5s;
+}
+
+
+.icons2:hover {
+  text-decoration: none;
+}
+
+/* cards dashboard*/
+.card {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: 'Exo 2', sans-serif;
+  /* justify-content: space-around   ; */
+  margin: 1rem 1rem 1rem 2.7rem;
+  /* box-shadow:10px 10px 5px #aaaaaa; */
+}
+.link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: ease-out 0.3s;
+}
+
+ .link:hover {
+  text-decoration: none;  
+  color:black;
+
+ 
+} 
+.menu-item{
+  transition: ease-in-out 0.3s;
+  padding: 2px;
+}
+.menu-item:hover{
+  color: rgb(103, 103, 100);
+  background-color: #c1bbbb;
+  border-radius: 3px;
+  border-right: 2px solid #1eb1fb;
+}
+.icons {
+  margin: 0px 5px 6px 0p;
+  opacity: 0.9;
+  color: grey;
+  font-size: 3.5rem;
+  float: right;
+  transition: ease-in-out 0.5s;
+}
+.notes {
+  opacity: 0.5;
+  font-size: 3.8rem;
+}
+.icons:hover{
+  font-size: 4.5rem;
+}
+
+.home{
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 3px;
+  color: #000;
+  background-color:#1eb1fb;
+  font-size: 1.1rem;
+  margin-right:1.6rem;
+  padding: 0px 8px 0px 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.home:hover {
+  text-decoration: none;
+  color: #1eb1fb;
+  background-color:#000;
+}
+
+.navbar {
+  background-color: #1eb1fb;
+  margin-left: 5.4rem;
+  font-size: 2.1rem;
+  width:93vw;
+}
+.title {
+  padding-left: 10px;
+  font-family: 'Exo 2';
+  color:rgb(68, 68, 68);
+}
+
+.myTable {
+  margin-left: 5.4rem;
+  width: 93%;
+}
+
+.logout {
+  font-size: 1rem;
+  outline: none;
+  border:none;
+  color:1eb1fb;
+  font-weight: 700;
+  margin-top:4rem;
+  margin-left:11rem;
+  cursor: pointer;
+}
+.logout:hover{
+  text-decoration: none;
+  color:#1eb1fb;
+}
+.modalSection {
+  float: right;
+  color:#1eb1fb;
+  margin-right:1rem;
+}
+
+.input {
+  margin: 1.5rem 0 0 5.4rem;
+}
+input{
+  transition: ease-in-out 3s;
+}
+
+input:hover {
+  border-bottom: 2px solid #1eb1fb;
+}
+
+
+
+.display_text {
+  display: flex;
+  flex-direction: row-reverse;
+}
+input[type=search]{
+  margin: 3px 10px 0 0;
+  outline: none;
+  height: 2rem;
+  border: 2px solid gray;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+/* making container common and pointing cursor on update  css ends*/
+
+/* pagination css starts */
+.pagination {
+  margin: 25px 0 0 5.4rem;
+  display: flex;
+  list-style: none;
+  outline: none;
+}
+.pagination > .active > a{
+  background-color: #47ccde ;
+  border-color: #47ccde ;
+  color: #fff;
+}
+.pagination > li > a{
+  border: 1px solid #47ccde ;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+  background-color: #47ccde ;
+  border-color: #47ccde;
+  outline: none ;
+}
+.pagination > li > a, .pagination > li > span{
+  color: #47ccde
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span{
+  border-radius: unset
+}
+.delete {
+ margin: 0 0 0 8px;
+ color: rgb(211, 7, 7);
+ cursor: pointer;
+ transition: ease-in-out 0.5s;
+}
+.delete:hover {
+  font-size:1.3rem;
+}
+.edit {
+
+  color:#1eb1fb;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
+
+.edit:hover {
+  font-size:1.3rem;
+}
+
+.active {
+  background-color: rgb(156, 156, 155);
+  opacity: 0.9;
+}
+
+.addModal{
+  margin: 1rem 0 -2.7rem 5.4rem;
+  background-color: #1eb1fb;
+  outline:none;
+  border:none;
+  color:#333;
+  font-weight: 600;
+  transition: ease-in-out 0.5s;
+
+}
+
+.addModal:hover {
+  background-color: #000;
+  color:#1eb1fb;
+  border:none;
+}
+
+.card2 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: 2rem auto;
+  padding:5px;
+  border: 1px solid rgb(234, 230, 230);
+  box-shadow: 4px 4px 2px  #e4dfdf;
+  transition: ease-in-out 0.5s;
+}
+.card2:hover{
+  box-shadow: 4px 4px 2px #aca9a9;
+}
+label{
+  color: rgb(84, 83, 83);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.form-control {
+  width:20rem;
+}
+
+.address {
+  width:43rem;
+}
+
+@media screen and (max-width: 982px) {
+  .address {
+    width: 20rem;
+  }
+}
+/* body {
+  background-color: #FAC945;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  margin-top: 150px;
+  font-size: 17px;
+  color: #4B4D54;
+  overflow: hidden;
+  font-family: 'Source Sans Pro', sans-serif;
+} */
+
+.dropdown {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.1);
+  background-color: white;
+}
+
+.dropdown-header {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-body {
+  padding: 2px 0 2px 0;
+  border-top: 1px solid #E5E8EC;
+  display: none;
+}
+
+.dropdown-body.open {
+  display: block;
+ 
+}
+
+.dropdown-item {
+  padding: 5px 0 5px 0;
+}
+
+.dropdown-item:hover {
+  cursor: pointer;
+  background-color: #1eb1fb;
+  border-radius: 2px;
+  color:white;
+}
+
+.dropdown-item-dot {
+  opacity: 0;
+  color: #3685e7;
+  transition: all .2s ease-in-out;
+}
+
+.dropdown-item-dot.selected {
+  opacity: 1;
+}
+
+.icon {
+  font-size: 25px;
+  color: #3685e7;
+  font-weight: 700;
+  transform: rotate(0deg);
+  transition: all .2s ease-in-out;
+}
+
+.icon.open {
+  transform: rotate(180deg);
+}
+
+.something{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: sans-serif;
+  transition: ease-in-out 2s;
+  color:rgb(148, 145, 145);
+
+}
+
+.something2:hover{
+  border-bottom: 2px solid #1eb1fb;
+}
+.update-inactive {
+  margin: 0 0 0 8px;
+  color: rgb(211, 7, 7);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+  font-weight: 900;
+ }
+ .update-inactive:hover {
+   font-size:1.3rem;
+ }
+ .update-active {
+  margin: 0 0 0 8px;
+  color: rgb(142, 216, 31);
+  font-size: 1.1rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+ }
+ .update-active:hover {
+  font-size: 1.3rem;
+ }
+.view {
+  margin: 0 0 0 8px;
+  color: rgb(211, 7, 7);
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
+.view:hover {
+  font-size: 1.5rem;
+ }
+
+
+
+
+
+
+
